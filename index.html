@@ -560,15 +560,20 @@ td{padding:11px 16px;vertical-align:middle}
   z-index:6;pointer-events:none;opacity:.35;
 }
 .collective-hdr{
-  position:absolute;top:2.5rem;right:2.5rem;
-  max-width:400px;z-index:20;
-  background:linear-gradient(135deg,rgba(20,10,30,.65),rgba(5,2,10,.25));
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:min(460px,80vw);
+  z-index:20;
+  text-align:center;
+  background:linear-gradient(135deg,rgba(20,10,30,.7),rgba(5,2,10,.3));
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-  border:1px solid rgba(255,255,255,.05);
-  border-right:3px solid var(--mint);
-  padding:1.75rem;border-radius:4px;
-  box-shadow:0 30px 60px rgba(0,0,0,.5);
+  border:1px solid rgba(255,255,255,.06);
+  border-top:3px solid var(--mint);
+  padding:2rem 2.5rem;border-radius:12px;
+  box-shadow:0 30px 60px rgba(0,0,0,.5),0 0 40px rgba(11,252,206,.06);
 }
+.collective-hdr-sys{ justify-content:center; }
 .collective-hdr-sys{
   display:flex;align-items:center;gap:8px;margin-bottom:8px;
 }
@@ -588,11 +593,11 @@ td{padding:11px 16px;vertical-align:middle}
   transform:translate(50%,-50%);
   pointer-events:auto;
 }
-.phase-node.p1{top:14%;right:12%}
-.phase-node.p2{top:30%;right:30%}
-.phase-node.p3{top:48%;right:50%}
-.phase-node.p4{top:66%;right:68%}
-.phase-node.p5{top:82%;right:85%}
+.phase-node.p1{top:8%; right:5%}
+.phase-node.p2{top:22%;right:18%}
+.phase-node.p3{top:62%;right:42%}
+.phase-node.p4{top:74%;right:64%}
+.phase-node.p5{top:85%;right:84%}
 
 .holo-orb{
   border-radius:50%;
@@ -621,7 +626,7 @@ td{padding:11px 16px;vertical-align:middle}
 /* Phase card popup */
 .phase-card{
   position:absolute;
-  top:calc(100% + 22px);
+  top:calc(100% + 30px);
   left:50%;
   transform:translateX(-50%) translateY(16px);
   background:rgba(10,5,20,.92);
@@ -1195,7 +1200,8 @@ async function buildNavAndRender(){
   document.getElementById('page-'+currentTab).classList.add('active');
 
   // Three.js — particle network only on meetings tab
-  if(currentTab==='meetings'){ startThreeBackground(); } else{ stopThreeBackground(); }
+  // Meetings tab uses original violet+particles bg — no Three.js network needed
+  stopThreeBackground();
   // Space scene — only on collective tab
   if(currentTab!=='collective'){ stopSpaceScene(); }
 
@@ -1637,7 +1643,7 @@ function renderMeetings(){
     </div>`).join('');
 
   document.getElementById('page-meetings').innerHTML = `
-    <div style="min-height:calc(100vh - 56px);background:#050510;padding:40px 24px 60px;position:relative;z-index:1">
+    <div style="min-height:calc(100vh - 56px);background:transparent;padding:40px 24px 60px;position:relative;z-index:1">
       <div style="max-width:1100px;margin:0 auto">
         <div style="margin-bottom:32px">
           <div class="eyebrow" style="margin-bottom:8px">// המסע שעשינו יחד</div>
