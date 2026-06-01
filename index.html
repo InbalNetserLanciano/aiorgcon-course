@@ -533,6 +533,181 @@ td{padding:11px 16px;vertical-align:middle}
 .view-link{font-family:var(--mono);font-size:11px;color:rgba(247,245,250,.35);transition:color .2s;cursor:pointer}
 .view-link:hover{color:var(--mint)}
 @media(max-width:600px){.hide-sm{display:none}}
+
+/* ══════════════════════════════════════════════════
+   COLLECTIVE HERO — CINEMATIC SPACE
+══════════════════════════════════════════════════ */
+.collective-hero{
+  position:relative;
+  height:calc(100vh - 56px);
+  overflow:hidden;
+  background:#010005;
+}
+#webgl-collective-bg{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  z-index:1;pointer-events:none;
+}
+.mountain-sil{
+  position:absolute;bottom:-2vh;left:0;
+  width:100vw;height:20vh;z-index:5;
+  background:#000;
+  clip-path:polygon(0% 100%,0% 70%,12% 52%,24% 68%,38% 35%,52% 58%,72% 42%,85% 62%,100% 48%,100% 100%);
+  pointer-events:none;
+}
+#phase-svg{
+  position:absolute;inset:0;width:100%;height:100%;
+  z-index:6;pointer-events:none;opacity:.35;
+}
+.collective-hdr{
+  position:absolute;top:2.5rem;right:2.5rem;
+  max-width:400px;z-index:20;
+  background:linear-gradient(135deg,rgba(20,10,30,.65),rgba(5,2,10,.25));
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.05);
+  border-right:3px solid var(--mint);
+  padding:1.75rem;border-radius:4px;
+  box-shadow:0 30px 60px rgba(0,0,0,.5);
+}
+.collective-hdr-sys{
+  display:flex;align-items:center;gap:8px;margin-bottom:8px;
+}
+.hdr-pulse{width:8px;height:8px;border-radius:50%;background:var(--mint);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.collective-hdr h2{font-size:1.6rem;font-weight:700;color:#fff;margin-bottom:.6rem}
+.collective-hdr p{font-size:13px;color:rgba(247,245,250,.6);line-height:1.65}
+
+/* Phase Nodes */
+.phase-nodes-layer{
+  position:absolute;inset:0;z-index:20;
+  pointer-events:none;
+}
+.phase-node{
+  position:absolute;
+  display:flex;flex-direction:column;align-items:center;
+  transform:translate(50%,-50%);
+  pointer-events:auto;
+}
+.phase-node.p1{top:14%;right:12%}
+.phase-node.p2{top:30%;right:30%}
+.phase-node.p3{top:48%;right:50%}
+.phase-node.p4{top:66%;right:68%}
+.phase-node.p5{top:82%;right:85%}
+
+.holo-orb{
+  border-radius:50%;
+  background:#F7F5FA;
+  box-shadow:0 0 10px rgba(255,255,255,.5);
+  cursor:pointer;position:relative;
+  transition:all .4s cubic-bezier(.175,.885,.32,1.275);
+  z-index:30;
+  animation:twinkle 3s infinite alternate ease-in-out;
+}
+.p1 .holo-orb{width:14px;height:14px;animation-delay:.2s}
+.p2 .holo-orb{width:18px;height:18px;animation-delay:1.5s}
+.p3 .holo-orb{width:24px;height:24px;box-shadow:0 0 20px #fff;animation-delay:.7s}
+.p4 .holo-orb{width:16px;height:16px;animation-delay:2.1s}
+.p5 .holo-orb{width:30px;height:30px;box-shadow:0 0 28px #fff,0 0 50px var(--mint);animation-delay:1.1s}
+@keyframes twinkle{
+  0%{transform:scale(.9);opacity:.6}
+  100%{transform:scale(1.15);opacity:1}
+}
+.holo-orb:hover{
+  transform:scale(1.6)!important;
+  background:#fff;
+  box-shadow:0 0 32px #fff,0 0 64px var(--mint);
+  animation-play-state:paused;
+}
+/* Phase card popup */
+.phase-card{
+  position:absolute;
+  top:calc(100% + 22px);
+  left:50%;
+  transform:translateX(-50%) translateY(16px);
+  background:rgba(10,5,20,.92);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(11,252,206,.25);
+  border-top:2px solid var(--mint);
+  padding:1.25rem 1.5rem;
+  width:320px;
+  opacity:0;visibility:hidden;
+  transition:all .45s cubic-bezier(.175,.885,.32,1.275);
+  pointer-events:none;
+  box-shadow:0 20px 50px rgba(0,0,0,.8),inset 0 0 20px rgba(11,252,206,.04);
+  z-index:40;text-align:right;border-radius:2px 2px 12px 12px;
+}
+.holo-orb:hover + .phase-card,
+.phase-card:hover{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:auto}
+.phase-card-sys{font-family:var(--mono);font-size:9px;color:var(--mint);letter-spacing:.2em;margin-bottom:10px}
+.phase-card h3{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.08)}
+.phase-card p{font-size:12px;line-height:1.7;color:rgba(247,245,250,.75)}
+.phase-card .highlight{color:var(--mint);font-weight:600}
+.phase-stage-label{
+  margin-top:14px;color:var(--bone);font-weight:300;
+  text-align:center;font-size:13px;
+  text-shadow:0 4px 20px rgba(0,0,0,1);letter-spacing:.3px;
+}
+.phase-stage-label span{
+  color:var(--mint);font-size:9px;letter-spacing:2px;
+  font-family:var(--mono);display:block;margin-top:3px;
+}
+/* Scroll hint */
+.scroll-hint{
+  position:absolute;bottom:22vh;left:50%;transform:translateX(-50%);
+  font-family:var(--mono);font-size:10px;color:rgba(247,245,250,.35);
+  letter-spacing:.15em;z-index:20;animation:bounceDown 2s infinite;
+}
+@keyframes bounceDown{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+
+/* ── PERSONAL MINI JOURNEY ─────────────────────── */
+.pmj-wrap{
+  position:relative;padding:24px;margin-bottom:28px;
+  background:rgba(0,0,5,.6);
+  border:1px solid rgba(11,252,206,.12);
+  border-radius:14px;overflow:hidden;
+}
+.pmj-bg{
+  position:absolute;inset:0;background:
+    radial-gradient(ellipse at 0% 50%,rgba(80,11,117,.25) 0%,transparent 60%),
+    radial-gradient(ellipse at 100% 50%,rgba(11,252,206,.08) 0%,transparent 50%);
+  pointer-events:none;
+}
+.pmj-title{font-family:var(--mono);font-size:10px;color:var(--mint);letter-spacing:.15em;margin-bottom:16px;position:relative;z-index:1}
+.pmj-track{
+  display:flex;align-items:center;justify-content:space-between;
+  position:relative;z-index:1;
+  padding:0 10px;
+}
+.pmj-step{
+  display:flex;flex-direction:column;align-items:center;
+  flex:1;position:relative;
+  cursor:default;
+}
+.pmj-step:not(:last-child)::after{
+  content:'';position:absolute;
+  top:12px;left:-50%;
+  width:100%;height:1px;
+  background:linear-gradient(90deg,rgba(11,252,206,.6),rgba(11,252,206,.1));
+  z-index:0;
+}
+.pmj-orb{
+  width:24px;height:24px;border-radius:50%;
+  background:#F7F5FA;z-index:1;
+  box-shadow:0 0 10px rgba(255,255,255,.5);
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;margin-bottom:8px;
+  transition:transform .3s;
+  flex-shrink:0;
+}
+.pmj-step:hover .pmj-orb{transform:scale(1.4);box-shadow:0 0 20px #fff,0 0 40px var(--mint)}
+.pmj-orb.done{background:var(--mint);box-shadow:0 0 12px rgba(11,252,206,.7)}
+.pmj-orb.locked{background:rgba(255,255,255,.2);opacity:.5}
+.pmj-step-label{font-size:10px;font-family:var(--mono);color:rgba(247,245,250,.5);text-align:center;max-width:80px;line-height:1.4}
+.pmj-step-sub{font-size:9px;color:rgba(11,252,206,.6);text-align:center;margin-top:2px}
+
+/* Collective scroll section */
+.collective-scroll{background:#010005;padding:40px 20px 60px;position:relative;z-index:10}
+.collective-scroll .section-wrap{max-width:960px;margin:0 auto}
 </style>
 </head>
 <body>
@@ -595,6 +770,7 @@ td{padding:11px 16px;vertical-align:middle}
     <div id="main-content">
       <div id="page-journey" class="page"></div>
       <div id="page-collective" class="page"></div>
+      <div id="page-meetings" class="page"></div>
       <div id="page-admin" class="page"></div>
     </div>
   </div>
@@ -987,8 +1163,8 @@ async function buildNavAndRender(){
 
   // Tabs
   const tabs = isAdmin
-    ? [{id:'admin',label:'ניהול'},{id:'collective',label:'אינטליגנציה קולקטיבית'}]
-    : [{id:'journey',label:'המסע האישי שלי'},{id:'collective',label:'האינטליגנציה הקולקטיבית'}];
+    ? [{id:'admin',label:'ניהול'},{id:'collective',label:'מסלול ההתפתחות'},{id:'meetings',label:'המסע שעשינו'}]
+    : [{id:'journey',label:'המסע האישי שלי'},{id:'collective',label:'מסלול ההתפתחות'},{id:'meetings',label:'המסע שעשינו'}];
 
   const tabsEl = document.getElementById('nav-tabs');
   tabsEl.innerHTML = tabs.map(t=>`<button class="nav-tab${currentTab===t.id?' active':''}" onclick="switchTab('${t.id}')">${t.label}</button>`).join('');
@@ -1013,18 +1189,20 @@ async function buildNavAndRender(){
   }
 
   // Show active page
-  ['journey','collective','admin'].forEach(id=>{
+  ['journey','collective','meetings','admin'].forEach(id=>{
     document.getElementById('page-'+id).classList.remove('active');
   });
   document.getElementById('page-'+currentTab).classList.add('active');
 
-  // Three.js network — only on collective tab
-  if(currentTab==='collective'){ startThreeBackground(); }
-  else{ stopThreeBackground(); }
+  // Three.js — particle network only on meetings tab
+  if(currentTab==='meetings'){ startThreeBackground(); } else{ stopThreeBackground(); }
+  // Space scene — only on collective tab
+  if(currentTab!=='collective'){ stopSpaceScene(); }
 
   // Render (all async)
   if(currentTab==='journey' && p) renderJourney(p);
   else if(currentTab==='collective') renderCollective();
+  else if(currentTab==='meetings') renderMeetings();
   else if(currentTab==='admin' && isAdmin) renderAdmin();
 }
 
@@ -1052,6 +1230,9 @@ async function renderJourney(p){
   const kPct = kLvlMap[survey.level] || 50;
 
   let html = `<div class="section-wrap fade-in">`;
+
+  /* Personal mini journey — at top */
+  html += buildPersonalMiniJourney(p, survey, quotes, saved);
 
   /* Profile */
   const photoUrl = PHOTOS[p.id] ? `photos/p${p.id}.jpg` : null;
@@ -1260,51 +1441,181 @@ function stopThreeBackground(){
   const c=document.getElementById('three-bg'); if(c) c.remove();
 }
 
+/* ── SPACE SCENE for Collective page ─────────── */
+let spaceRenderer=null, spaceAnimId=null;
+
+function startSpaceScene(){
+  const container = document.getElementById('webgl-collective-bg');
+  if(!container || spaceRenderer) return;
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x010005, 0.001);
+  const camera = new THREE.PerspectiveCamera(60, container.offsetWidth/container.offsetHeight, 1, 2000);
+  camera.position.z = 400;
+
+  const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+  renderer.setSize(container.offsetWidth, container.offsetHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  container.appendChild(renderer.domElement);
+  spaceRenderer = renderer;
+
+  // Star texture
+  const sc = document.createElement('canvas'); sc.width=sc.height=32;
+  const sx = sc.getContext('2d');
+  const sg = sx.createRadialGradient(16,16,0,16,16,16);
+  sg.addColorStop(0,'rgba(255,255,255,1)'); sg.addColorStop(0.2,'rgba(255,255,255,.8)'); sg.addColorStop(1,'rgba(0,0,0,0)');
+  sx.fillStyle=sg; sx.fillRect(0,0,32,32);
+  const starTex = new THREE.CanvasTexture(sc);
+
+  // Cloud texture
+  const cc = document.createElement('canvas'); cc.width=cc.height=128;
+  const cx2 = cc.getContext('2d');
+  const cg = cx2.createRadialGradient(64,64,0,64,64,64);
+  cg.addColorStop(0,'rgba(255,255,255,.8)'); cg.addColorStop(.4,'rgba(255,255,255,.3)'); cg.addColorStop(1,'rgba(0,0,0,0)');
+  cx2.fillStyle=cg; cx2.fillRect(0,0,128,128);
+  const cloudTex = new THREE.CanvasTexture(cc);
+
+  // Nebula (clouds)
+  const NC=1200, ng=new THREE.BufferGeometry();
+  const np=new Float32Array(NC*3), nc=new Float32Array(NC*3);
+  const cV=new THREE.Color(0x500B75), cD=new THREE.Color(0x21052F), cM=new THREE.Color(0x0BFCCE);
+  for(let i=0;i<NC;i++){
+    const t=(Math.random()-.5)*2500, sr=Math.random()*400, sa=Math.random()*Math.PI*2;
+    np[i*3]=t-Math.cos(sa)*sr+(Math.sin(t*.005)*100);
+    np[i*3+1]=t+Math.cos(sa)*sr+(Math.cos(t*.005)*100);
+    np[i*3+2]=Math.sin(sa)*sr*1.5;
+    const mc=new THREE.Color(), r=Math.random();
+    mc.copy(r>.85?cM:r>.4?cV:cD);
+    nc[i*3]=mc.r; nc[i*3+1]=mc.g; nc[i*3+2]=mc.b;
+  }
+  ng.setAttribute('position',new THREE.BufferAttribute(np,3));
+  ng.setAttribute('color',new THREE.BufferAttribute(nc,3));
+  const dust=new THREE.Points(ng,new THREE.PointsMaterial({size:200,map:cloudTex,blending:THREE.AdditiveBlending,depthWrite:false,transparent:true,vertexColors:true,opacity:.12}));
+  scene.add(dust);
+
+  // Stars
+  const SN=8000, sg2=new THREE.BufferGeometry();
+  const sp=new Float32Array(SN*3), sc2=new Float32Array(SN*3), ss=new Float32Array(SN);
+  for(let i=0;i<SN;i++){
+    let t,sx2,sy,sz;
+    if(Math.random()>.15){
+      t=(Math.random()-.5)*2800; const sr=Math.pow(Math.random(),2)*350, sa=Math.random()*Math.PI*2;
+      sx2=-Math.cos(sa)*sr; sy=Math.cos(sa)*sr; sz=Math.sin(sa)*sr;
+    } else {
+      t=(Math.random()-.5)*3000; sx2=(Math.random()-.5)*2000; sy=(Math.random()-.5)*2000; sz=(Math.random()-.5)*1000-200;
+    }
+    sp[i*3]=t+sx2; sp[i*3+1]=t+sy; sp[i*3+2]=sz;
+    const col=new THREE.Color(0xF7F5FA), rc=Math.random();
+    if(rc>.98)col.setHex(0x0BFCCE); else if(rc>.95)col.setHex(0xffbb99); else if(rc>.9)col.setHex(0x99ccff);
+    sc2[i*3]=col.r; sc2[i*3+1]=col.g; sc2[i*3+2]=col.b;
+    ss[i]=Math.random()*2.5+(Math.random()>.98?6:0);
+  }
+  sg2.setAttribute('position',new THREE.BufferAttribute(sp,3));
+  sg2.setAttribute('color',new THREE.BufferAttribute(sc2,3));
+  const stars=new THREE.Points(sg2,new THREE.PointsMaterial({size:3,map:starTex,blending:THREE.AdditiveBlending,depthWrite:false,transparent:true,vertexColors:true,opacity:.8}));
+  scene.add(stars);
+
+  let mx=0,my=0;
+  const mouseFn=e=>{mx=(e.clientX-innerWidth/2)*.1; my=(e.clientY-innerHeight/2)*.1;};
+  document.addEventListener('mousemove',mouseFn);
+
+  const clock2=new THREE.Clock();
+  function loop(){
+    spaceAnimId=requestAnimationFrame(loop);
+    const t=clock2.getElapsedTime();
+    stars.position.x=Math.sin(t*.05)*20; stars.position.y=Math.cos(t*.05)*20;
+    dust.position.x=Math.sin(t*.03)*30; dust.position.y=Math.cos(t*.03)*30;
+    stars.rotation.z=Math.sin(t*.02)*.05; dust.rotation.z=Math.cos(t*.02)*.05;
+    camera.position.x+=(mx*.8-camera.position.x)*.02;
+    camera.position.y+=(-my*.8-camera.position.y)*.02;
+    camera.lookAt(scene.position);
+    renderer.render(scene,camera);
+  }
+  loop();
+
+  const resFn=()=>{ camera.aspect=container.offsetWidth/container.offsetHeight; camera.updateProjectionMatrix(); renderer.setSize(container.offsetWidth,container.offsetHeight); };
+  window.addEventListener('resize',resFn);
+
+  // Cleanup ref
+  spaceRenderer._cleanup=()=>{ document.removeEventListener('mousemove',mouseFn); window.removeEventListener('resize',resFn); };
+}
+
+function stopSpaceScene(){
+  if(spaceAnimId){ cancelAnimationFrame(spaceAnimId); spaceAnimId=null; }
+  if(spaceRenderer){ spaceRenderer._cleanup&&spaceRenderer._cleanup(); spaceRenderer.dispose(); spaceRenderer=null; }
+}
+
+function drawPhaseConnectors(){
+  const svg = document.getElementById('phase-svg');
+  if(!svg) return;
+  const nodes = document.querySelectorAll('.phase-node');
+  if(nodes.length<2) return;
+  const rect = svg.getBoundingClientRect();
+  let path = '';
+  const pts = Array.from(nodes).map(n=>{
+    const orb = n.querySelector('.holo-orb');
+    const r = orb.getBoundingClientRect();
+    return { x: r.left+r.width/2-rect.left, y: r.top+r.height/2-rect.top };
+  });
+  for(let i=0;i<pts.length-1;i++){
+    const a=pts[i], b=pts[i+1];
+    // Bezier curve
+    const cx1=a.x-(a.x-b.x)*.3, cy1=a.y-(a.y-b.y)*.1;
+    const cx2=b.x+(a.x-b.x)*.3, cy2=b.y+(a.y-b.y)*.1;
+    path+=`<path d="M${a.x},${a.y} C${cx1},${cy1} ${cx2},${cy2} ${b.x},${b.y}"
+      stroke="rgba(11,252,206,0.5)" stroke-width="1.5" fill="none"
+      stroke-dasharray="4 6" opacity="0.6"/>`;
+    // Glow dots
+    path+=`<circle cx="${a.x}" cy="${a.y}" r="3" fill="rgba(11,252,206,0.4)"/>`;
+  }
+  path+=`<circle cx="${pts[pts.length-1].x}" cy="${pts[pts.length-1].y}" r="4" fill="rgba(11,252,206,0.6)"/>`;
+  svg.innerHTML = path;
+}
+
+/* ── PERSONAL MINI JOURNEY ───────────────────── */
+function buildPersonalMiniJourney(p, survey, quotes, reflection){
+  const steps = [
+    {
+      label:'נקודת\nהפתיחה', sub: survey.level||'?',
+      done:true, icon:'📋',
+      tip: survey.focus ? `${survey.focus} · ${survey.level}` : 'סקר מקדים'
+    },
+    {
+      label:'המפגש\nהראשון', sub:'28.4.26',
+      done: quotes && quotes.length>0, icon:'🎤',
+      tip: quotes && quotes.length>0 ? 'יש ציטוטים' : 'לא הועלה'
+    },
+    {
+      label:'5 מפגשים\nידע וכלים', sub:'2-6',
+      done:true, icon:'🧠',
+      tip:'מחקר, תוצרים, דאטה, אוטומציות'
+    },
+    {
+      label:'רפלקציה\nסופית', sub: reflection ? 'הוגשה ✓' : 'ממתינה',
+      done: !!reflection, icon: reflection ? '✅' : '🔒',
+      tip: reflection ? reflection.topTools : 'טרם הוגשה'
+    },
+  ];
+
+  const stepsHtml = steps.map((s,i)=>`
+    <div class="pmj-step" title="${s.tip}">
+      <div class="pmj-orb ${s.done?'done':i===3?'locked':''}">${s.icon}</div>
+      <div class="pmj-step-label">${s.label.replace('\n','<br>')}</div>
+      <div class="pmj-step-sub">${s.sub}</div>
+    </div>`).join('');
+
+  return `<div class="pmj-wrap">
+    <div class="pmj-bg"></div>
+    <div class="pmj-title">// מסלול ההתפתחות האישי שלי</div>
+    <div class="pmj-track">${stepsHtml}</div>
+  </div>`;
+}
+
 /* ══════════════════════════════════════════════════════
    COLLECTIVE PAGE
 ══════════════════════════════════════════════════════ */
-async function renderCollective(){
-  const reflections = await loadReflections();
-  const submitted = Object.keys(reflections).length;
-  const pct = Math.round(submitted/16*100);
-
-  /* Donut SVG */
-  const total = KNOWLEDGE_DIST.reduce((s,d)=>s+d.count,0);
-  let angle=-Math.PI/2, svgPaths='';
-  const cx=80,cy=80,r=62,inner=36;
-  KNOWLEDGE_DIST.forEach(d=>{
-    const sweep=(d.count/total)*2*Math.PI;
-    const x1=cx+r*Math.cos(angle), y1=cy+r*Math.sin(angle);
-    angle+=sweep;
-    const x2=cx+r*Math.cos(angle), y2=cy+r*Math.sin(angle);
-    const xi1=cx+inner*Math.cos(angle-sweep), yi1=cy+inner*Math.sin(angle-sweep);
-    const xi2=cx+inner*Math.cos(angle), yi2=cy+inner*Math.sin(angle);
-    const lg=sweep>Math.PI?1:0;
-    svgPaths+=`<path d="M${xi1} ${yi1} L${x1} ${y1} A${r} ${r} 0 ${lg} 1 ${x2} ${y2} L${xi2} ${yi2} A${inner} ${inner} 0 ${lg} 0 ${xi1} ${yi1}Z" fill="${d.color}" opacity=".9"><title>${d.label}: ${d.count}</title></path>`;
-  });
-  const donutSVG=`<svg width="160" height="160" viewBox="0 0 160 160" style="overflow:visible">
-    ${svgPaths}
-    <text x="80" y="76" text-anchor="middle" fill="#F7F5FA" font-size="22" font-weight="700" font-family="Heebo">${total}</text>
-    <text x="80" y="92" text-anchor="middle" fill="#0BFCCE" font-size="9" font-family="JetBrains Mono">משתתפים</text>
-  </svg>`;
-  const legendHtml = KNOWLEDGE_DIST.map(d=>`<div class="legend-item">
-    <div class="legend-dot" style="background:${d.color}"></div>
-    <span class="legend-label">${d.label}</span>
-    <span class="legend-count">${d.count}</span>
-  </div>`).join('');
-
-  /* Bar chart */
-  const maxBar = Math.max(...FOCUS_DIST.map(d=>d.count));
-  const barsHtml = FOCUS_DIST.map(d=>`<div class="bar-row">
-    <span class="bar-label">${d.label}</span>
-    <div class="bar-track"><div class="bar-fill" style="width:${Math.round(d.count/maxBar*100)}%"></div></div>
-    <span class="bar-num">${d.count}</span>
-  </div>`).join('');
-
-  /* Word cloud */
-  const cloudHtml = WORDS.map(w=>`<span class="word-chip" style="--chip-size:${w.size}rem;border:1px solid rgba(11,252,206,${.18+(w.size-1.1)*.22});color:rgba(247,245,250,${.45+(w.size-1.1)*.3})" onmouseenter="this.style.borderColor='rgba(11,252,206,.6)';this.style.color='#0BFCCE'" onmouseleave="this.style.borderColor='rgba(11,252,206,${.18+(w.size-1.1)*.22})';this.style.color='rgba(247,245,250,${.45+(w.size-1.1)*.3})'">${w.t}</span>`).join('');
-
-  /* 3D Meeting cards — upgraded design */
+/* ── MEETINGS PAGE ─────────────────────────────── */
+function renderMeetings(){
   const meetingsHtml = MEETINGS.map(m=>`
     <div class="mcard-wrap ${m.theme}" onclick="openMeetingModal(${m.num === '2-3' ? '"2-3"' : m.num})">
       <div class="mcard-blob" style="background:${m.blob}"></div>
@@ -1316,14 +1627,8 @@ async function renderCollective(){
           </div>
         </div>
         <div class="mcard-title">${m.title}</div>
-        <div class="mcard-date">
-          <i class="fa-regular fa-calendar-days" style="opacity:.5"></i>
-          ${m.date}
-        </div>
-        <div class="mcard-footer">
-          <i class="fa-solid fa-arrow-left mcard-arrow"></i>
-          לחץ/י לפרטים
-        </div>
+        <div class="mcard-date"><i class="fa-regular fa-calendar-days" style="opacity:.5"></i> ${m.date}</div>
+        <div class="mcard-footer"><i class="fa-solid fa-arrow-left mcard-arrow"></i> לחץ/י לפרטים</div>
       </div>
       <div class="mcard-summary">
         <div class="mcard-summary-label">${m.label} · ${m.title}</div>
@@ -1331,60 +1636,157 @@ async function renderCollective(){
       </div>
     </div>`).join('');
 
-  /* Anonymous quotes */
-  const quotesHtml = ANON_QUOTES.map(q=>`<div class="anon-quote">
-    <p>${q}</p><small>— משתתף/ת אנונימי/ת</small>
-  </div>`).join('');
-
-  /* Emerging themes */
-  const emergHtml = EMERGING.slice(0, Math.max(1,submitted)).map(t=>`<div class="emerging-theme"><div class="em-dot"></div><span class="em-text">${t}</span></div>`).join('');
-
-  document.getElementById('page-collective').innerHTML = `<div class="section-wrap fade-in">
-    <!-- Part 1 -->
-    <div class="section-block">
-      <span class="eyebrow">// תמונת מצב — נקודת הפתיחה של הקבוצה</span>
-      <div class="collective-grid">
-        <div class="chart-container">
-          <div class="chart-title">רמת היכרות עם AI</div>
-          <div class="donut-wrap">${donutSVG}<div class="donut-legend">${legendHtml}</div></div>
+  document.getElementById('page-meetings').innerHTML = `
+    <div style="min-height:calc(100vh - 56px);background:#050510;padding:40px 24px 60px;position:relative;z-index:1">
+      <div style="max-width:1100px;margin:0 auto">
+        <div style="margin-bottom:32px">
+          <div class="eyebrow" style="margin-bottom:8px">// המסע שעשינו יחד</div>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;color:#fff;line-height:1.3">
+            שישה מפגשים, <span style="color:var(--mint)">עולם שלם של כלים</span>
+          </h2>
+          <p style="color:rgba(247,245,250,.5);font-size:14px;margin-top:8px">רחף מעל מפגש לתמצית — לחץ/י לפרטים מלאים</p>
         </div>
-        <div class="chart-container">
-          <div class="chart-title">תחומי עיסוק ראשיים</div>
-          ${barsHtml}
+        <div class="meetings-grid">${meetingsHtml}</div>
+      </div>
+    </div>`;
+}
+
+/* ── COLLECTIVE PAGE — CINEMATIC JOURNEY ──────── */
+async function renderCollective(){
+  const reflections = await loadReflections();
+  const submitted = Object.keys(reflections).length;
+  const pct = Math.round(submitted/16*100);
+
+  // Build phase 1 survey aggregate
+  const knowledgeCounts = {בסיסית:0,בינונית:0,גבוהה:0};
+  Object.values(SURVEY).forEach(s=>{ if(s.level) knowledgeCounts[s.level]=(knowledgeCounts[s.level]||0)+1; });
+  const dominantLevel = Object.entries(knowledgeCounts).sort((a,b)=>b[1]-a[1])[0][0];
+
+  // Phase 5 emerging themes from reflections
+  const refValues = Object.values(reflections);
+  const emergingHtml = EMERGING.slice(0, Math.max(1, submitted)).map(t=>
+    `<div style="display:flex;gap:6px;align-items:flex-start;margin-bottom:6px">
+       <div style="width:5px;height:5px;border-radius:50%;background:var(--mint);flex-shrink:0;margin-top:5px"></div>
+       <span style="font-size:11px;color:rgba(247,245,250,.8)">${t}</span>
+     </div>`).join('');
+
+  const PHASES_DATA = [
+    {
+      cls:'p1', sys:'PHASE_01 // PRE_SURVEY', title:'נקודת הפתיחה',
+      sub:'סקר מקדים', labelSub:'סקר מקדים',
+      body:`<span class="highlight">רמת ידע דומיננטית: ${dominantLevel}</span><br><br>
+        ${knowledgeCounts['בסיסית']} משתתפות הגיעו עם היכרות בסיסית, ${knowledgeCounts['בינונית']} עם בינונית, ו-${knowledgeCounts['גבוהה']} עם גבוהה.<br><br>
+        <span class="highlight">תחומים עיקריים:</span> הנחיית סדנאות, ליווי תהליכי שינוי, ייעוץ אישי.<br><br>
+        "אני מרגישה שזה לא רק ללחוץ על כפתורים — אני עוד לא שם, והייתי רוצה להיות שם."`,
+    },
+    {
+      cls:'p2', sys:'PHASE_02 // FIRST_ENCOUNTER', title:'המפגש הראשון',
+      sub:'28 באפריל 2026', labelSub:'שבירת הקרח',
+      body:`<span class="highlight">"כרגע זה מרגיש יותר time consuming מ-time effective"</span><br><br>
+        בפגישת הפתיחה צפו פחד מהלא-נודע לצד סקרנות עצומה. המשתתפות גילו שה-AI אפקטיבי ביותר כשמתייחסים אליו כ<span class="highlight">שותף לחשיבה</span>, לא ככלי טכני.`,
+    },
+    {
+      cls:'p3', sys:'PHASE_03 // DEEP_LEARNING', title:'הלמידה העמוקה',
+      sub:'מפגשים 2-5', labelSub:'עיבוד ידע',
+      body:`<span class="highlight">NotebookLM, Deep Research, MCP, Claude Design</span><br><br>
+        חמישה מפגשים של כלים בפועל — מחקר עמוק, יצירת מצגות, ניתוח דאטה, אוטומציות. הידע עבר מ"שמעתי על זה" ל<span class="highlight">"עשיתי את זה בפועל"</span>.`,
+    },
+    {
+      cls:'p4', sys:'PHASE_04 // PRACTICE', title:'יישום בשטח',
+      sub:'בין המפגשים', labelSub:'ניסוי ויישום',
+      body:`הכלים עברו לשטח. מהנחיית סדנאות דרך AI ועד ניתוח סקרים ב-Excel — כל משתתפת מצאה את ה<span class="highlight">Quick Win האישי שלה</span>.<br><br>
+        "בניתי סדנה שלמה סביב האתגר של הלקוח תוך שעה."`,
+    },
+    {
+      cls:'p5', sys:'PHASE_05 // REFLECTION', title:'האופק החדש',
+      sub:'רפלקציית סיום', labelSub:'סינרגיה',
+      body:`<span class="highlight">${submitted} מתוך 16 השלימו רפלקציה (${pct}%)</span><br><br>
+        ${submitted > 0 ? emergingHtml : 'הרפלקציות ממתינות להגשה...'}
+        <br><div style="margin-top:8px;font-family:var(--mono);font-size:10px;color:rgba(11,252,206,.6)">
+        // גלול למטה לפרטים מלאים</div>`,
+    },
+  ];
+
+  const nodesHtml = PHASES_DATA.map(ph=>`
+    <div class="phase-node ${ph.cls}">
+      <div class="holo-orb"></div>
+      <div class="phase-card">
+        <div class="phase-card-sys">${ph.sys}</div>
+        <h3>${ph.title}</h3>
+        <p>${ph.body}</p>
+      </div>
+      <div class="phase-stage-label">${ph.title}<span>${ph.labelSub}</span></div>
+    </div>`).join('');
+
+  // Emerging themes for scroll section
+  const emergHtml = EMERGING.slice(0, Math.max(1,submitted)).map(t=>`
+    <div class="emerging-theme"><div class="em-dot"></div><span class="em-text">${t}</span></div>`).join('');
+
+  // Anonymous quotes
+  const quotesHtml = ANON_QUOTES.map(q=>`<div class="anon-quote"><p>${q}</p><small>— משתתף/ת אנונימי/ת</small></div>`).join('');
+
+  document.getElementById('page-collective').innerHTML = `
+    <!-- ── Full-screen cinematic hero ── -->
+    <div class="collective-hero">
+      <div id="webgl-collective-bg"></div>
+      <div class="mountain-sil"></div>
+      <svg id="phase-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+
+      <!-- Header card -->
+      <div class="collective-hdr">
+        <div class="collective-hdr-sys">
+          <div class="hdr-pulse"></div>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--mint);letter-spacing:.2em">SYS.INIT // PATH_TO_MASTERY</span>
         </div>
+        <h2>מסלול ההתפתחות של הקבוצה</h2>
+        <p>רחף מעל צמתי המידע לאורך הנתיב כדי לחשוף תובנות וקולות מהשטח — מנקודת הפתיחה המהססת ועד לשליטה קוגניטיבית.</p>
       </div>
-      <div class="chart-container">
-        <div class="chart-title">נושאים מרכזיים שעלו בסקר</div>
-        <div class="word-cloud">${cloudHtml}</div>
-      </div>
+
+      <!-- Phase nodes -->
+      <div class="phase-nodes-layer">${nodesHtml}</div>
+
+      <!-- Scroll hint -->
+      <div class="scroll-hint">גלול למטה לפרטים ↓</div>
     </div>
 
-    <!-- Part 2 — Meeting cards -->
-    <div class="section-block">
-      <span class="eyebrow">// המסע שעשינו — לחצ/י על מפגש לפרטים מלאים</span>
-      <div class="meetings-grid">${meetingsHtml}</div>
-      <div style="margin-top:20px">${quotesHtml}</div>
-    </div>
+    <!-- ── Scrollable section below ── -->
+    <div class="collective-scroll">
+      <div class="section-wrap">
 
-    <!-- Part 3 -->
-    <div class="section-block">
-      <span class="eyebrow">// רפלקציות סיום — הקבוצה מסכמת</span>
-      <div class="card">
-        <div class="reflex-status">
-          <div>
-            <div class="reflex-count">סטטוס הגשת רפלקציות</div>
-            <div class="mono text-xs text-dim" style="margin-top:3px">${submitted} / 16 הוגשו</div>
+        <!-- Anonymous quotes -->
+        <div class="section-block">
+          <span class="eyebrow">// קולות מהמפגש הראשון — ציטוטים אנונימיים</span>
+          ${quotesHtml}
+        </div>
+
+        <!-- Reflections summary -->
+        <div class="section-block">
+          <span class="eyebrow">// רפלקציות סיום — הקבוצה מסכמת</span>
+          <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(11,252,206,.15)">
+            <div class="reflex-status">
+              <div>
+                <div class="reflex-count">סטטוס הגשת רפלקציות</div>
+                <div class="mono text-xs text-dim" style="margin-top:3px">${submitted} / 16 הוגשו</div>
+              </div>
+              <div style="text-align:right">
+                <div class="reflex-pct">${pct}%</div>
+                <div class="reflex-pct-sub">השלמה</div>
+              </div>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
+            ${submitted>0
+              ? `<div class="eyebrow" style="margin-bottom:10px">// נושאים מתעוררים מהרפלקציות</div>${emergHtml}`
+              : `<p class="text-dim mono" style="font-size:12px;text-align:center;padding:8px 0">// ממתין לרפלקציות הקבוצה...</p>`}
           </div>
-          <div style="text-align:right">
-            <div class="reflex-pct">${pct}%</div>
-            <div class="reflex-pct-sub">השלמה</div>
-          </div>
         </div>
-        <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
-        ${submitted>0 ? `<div class="eyebrow" style="margin-bottom:10px">// נושאים מתעוררים מהרפלקציות</div>${emergHtml}` : '<p class="text-dim mono" style="font-size:12px;text-align:center;padding:8px 0">// ממתין לרפלקציות הקבוצה...</p>'}
+
       </div>
-    </div>
-  </div>`;
+    </div>`;
+
+  // Start space Three.js scene
+  startSpaceScene();
+  // Draw SVG connectors between nodes after DOM paint
+  requestAnimationFrame(drawPhaseConnectors);
 }
 
 /* ══════════════════════════════════════════════════════
