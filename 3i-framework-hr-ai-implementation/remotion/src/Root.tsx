@@ -4,7 +4,7 @@ import {MainVideo, MainVideoProps, PanelTiming} from './MainVideo';
 import {getAudioDuration} from './lib/get-audio-duration';
 import {getVideoDuration} from './lib/get-video-duration';
 import {PANELS, pad} from './data';
-import {FPS, VIDEO_WIDTH, VIDEO_HEIGHT, VO_TAIL_SEC, INTRO_DURATION_SEC} from './constants';
+import {FPS, VIDEO_WIDTH, VIDEO_HEIGHT, VO_TAIL_SEC, INTRO_DURATION_SEC, FADE_FRAMES} from './constants';
 
 const calculateMetadata: CalculateMetadataFunction<MainVideoProps> = async ({
   abortSignal,
@@ -33,9 +33,13 @@ const calculateMetadata: CalculateMetadataFunction<MainVideoProps> = async ({
     }),
   );
 
+  // Each transition overlaps two adjacent scenes by FADE_FRAMES.
+  // There are panelTimings.length transitions (one after intro + one before each panel).
+  const numTransitions = panelTimings.length;
   const totalFrames =
     introDurationFrames +
-    panelTimings.reduce((sum, t) => sum + t.durationInFrames, 0);
+    panelTimings.reduce((sum, t) => sum + t.durationInFrames, 0) -
+    numTransitions * FADE_FRAMES;
 
   return {
     durationInFrames: totalFrames,

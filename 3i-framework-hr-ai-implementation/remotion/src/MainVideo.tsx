@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Sequence} from 'remotion';
-import {TransitionSeries, fade} from '@remotion/transitions';
+import {TransitionSeries, linearTiming} from '@remotion/transitions';
+import {fade} from '@remotion/transitions/fade';
 import {IntroScene} from './scenes/IntroScene';
 import {PanelScene} from './scenes/PanelScene';
 import {PANELS, PanelConfig} from './data';
@@ -38,7 +39,8 @@ export const MainVideo: React.FC<MainVideoProps> = ({
           return (
             <React.Fragment key={timing.panelIndex}>
               <TransitionSeries.Transition
-                timing={fade({durationInFrames: FADE_FRAMES})}
+                presentation={fade()}
+                timing={linearTiming({durationInFrames: FADE_FRAMES})}
               />
               <TransitionSeries.Sequence durationInFrames={timing.durationInFrames}>
                 <PanelScene
