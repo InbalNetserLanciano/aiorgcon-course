@@ -1,0 +1,38 @@
+{
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+  "voice_name": "George",
+  "model_id": "eleven_v3",
+  "output_format": "mp3_44100_128",
+  "panels": [
+    {
+      "id": "panel_01",
+      "scene": "Scene 1 — AI Is Already Here",
+      "text": "[thoughtful] AI is already inside the organization. [pause] In meetings. In documents. In every decision. [soft exhale] But scattered use... is not transformation."
+    },
+    {
+      "id": "panel_02",
+      "scene": "Scene 2 — The Strategic Decision",
+      "text": "[confident, deliberate] The CEO and CHRO decide. [pause] AI must serve organizational goals — [resolute] not as a trend, but as a lever for real business value."
+    },
+    {
+      "id": "panel_03",
+      "scene": "Scene 3 — The Real Challenge",
+      "text": "[building intensity] The real challenge [pause] is not choosing another AI tool. [dramatic pause] It is translating strategy [pause] into a new way of working."
+    },
+    {
+      "id": "panel_04",
+      "scene": "Scene 4 — The 3I Framework Reveal",
+      "text": "[inspired, authoritative] Three levels. One connected system. [pause] Improve. Integrate. Impact. [beat] The 3I Framework for HR AI Implementation."
+    },
+    {
+      "id": "panel_05",
+      "scene": "Scene 6 — Integrate: Workflows and Teams",
+      "text": "[engaged, purposeful] This is where AI moves beyond personal productivity [pause] into how teams actually work. [pause] Recruitment. Learning. Performance. Redesigned."
+    },
+    {
+      "id": "panel_06",
+      "scene": "Scene 8 — Closing: The New Architecture for Work",
+      "text": "[profound, resonant] AI implementation is not a technology project. [pause] It is a new architecture for work. [long pause] The question is not whether AI will change work. [emphatic] The question is — who is designing the way it happens?"
+    }
+  ]
+}
