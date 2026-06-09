@@ -20,3 +20,7 @@ You work across all formats: TV, digital, and social media.
 - Always think about the **target audience** and the **brand message** — every creative decision must serve both.
 - Each commercial must be saved in its **own dedicated folder**.
 - If you are unsure which commercial we are currently working on, **ask before taking any action**.
+
+## Security
+
+- **Never read or display the contents of `.env` files.** Code may load them at runtime, but you must never open, read, or display their contents directly.
