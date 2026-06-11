@@ -1,0 +1,36 @@
+# Video prompts — From AI Tools to Organizational Transformation
+# Format: PANEL XX | Scene Title  (followed by the prompt on the next lines)
+# Panels are separated by ---
+# Edit the prompt lines freely; do not change the PANEL XX header format.
+
+---
+
+PANEL 01 | Scene 1 — AI Is Already Here
+Slow dolly forward through a modern open-plan office. Employees at laptops and curved monitors, translucent holographic UI layers shimmer and pulse softly above the screens. Shallow depth of field, cool blue and white cinematic light. Ambient high-tech hum, faint keyboard sounds. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 02 | Scene 2 — The Strategic Decision
+Slow push-in toward two executives at a sleek glass boardroom table. The man gestures decisively toward a glowing abstract organizational diagram projected behind them. Warm directional light mixed with cool screen glow, confident and purposeful atmosphere. Subtle ambient room tone. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 03 | Scene 3 — The Real Challenge
+Static camera. HR professionals in a collaborative workspace, abstract luminous data particles and glowing nodes drift and orbit slowly around the figures like a floating augmented layer. Deep focus, atmospheric blue-purple cinematic light. Soft analytical ambient hum. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 04 | Scene 4 — The 3I Framework Reveal
+Static camera. Three horizontal glowing bands pulse and breathe rhythmically in a dark space — deep purple and turquoise light expanding then contracting, forming a layered architectural structure. Futuristic and authoritative atmosphere. Deep resonant ambient hum. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 05 | Scene 6 — Integrate: Workflows and Teams
+Slow pan right across a diverse team gathered around a large interactive digital display. Glowing process nodes connect and light up in sequence across the board as the team members lean in collaboratively. Warm office lighting, energetic and constructive atmosphere. Ambient collaborative sound. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 06 | Scene 8 — Closing: The New Architecture for Work
+Slow push-in toward the center of the frame. Four glowing abstract elements — flowing human silhouettes, orbiting data spheres, geometric circuit patterns, concentric target rings — stream inward and converge, radiating turquoise and white light outward. Epic and aspirational atmosphere. Rising ambient tone building to silence. No text, no captions, no graphic overlays.
+
+---
