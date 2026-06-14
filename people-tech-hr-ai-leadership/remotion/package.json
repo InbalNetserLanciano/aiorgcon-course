@@ -1,0 +1,28 @@
+{
+  "name": "hr-ai-leadership-video",
+  "version": "1.0.0",
+  "description": "Remotion: People Tech — HR Leads AI Transformation",
+  "scripts": {
+    "studio": "npx remotion studio",
+    "render": "npx remotion render src/index.ts HRLeadsAI output/video.mp4 --codec h264",
+    "still": "npx remotion still src/index.ts HRLeadsAI --frame=30 --scale=0.5 output/preview.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.x",
+    "@remotion/google-fonts": "4.x",
+    "@remotion/media": "4.x",
+    "@remotion/transitions": "4.x",
+    "mediabunny": "*",
+    "remotion": "4.x"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

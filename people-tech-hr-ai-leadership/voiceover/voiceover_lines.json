@@ -1,0 +1,38 @@
+{
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+  "voice_name": "George",
+  "model_id": "eleven_v3",
+  "output_format": "mp3_44100_128",
+  "panels": [
+    {
+      "id": "panel_01",
+      "scene": "Scene 1 — The Silo Problem",
+      "text": "[resolute] Everyone is building with AI. [pause] No one is building together."
+    },
+    {
+      "id": "panel_02",
+      "scene": "Scene 2 — IMPROVE",
+      "text": "[grounded] It starts here — not in a training room. [pause] With real, hands-on practice."
+    },
+    {
+      "id": "panel_03",
+      "scene": "Scene 3 — INTEGRATE",
+      "text": "[deliberate] Integration isn't a tool decision. [pause] It's a conversation HR has to convene."
+    },
+    {
+      "id": "panel_04",
+      "scene": "Scene 4 — IMPACT",
+      "text": "[building intensity] Who will we need? What changes in every role? [pause] Who manages the machines?"
+    },
+    {
+      "id": "panel_05",
+      "scene": "Scene 5 — The New Organization",
+      "text": "[confident] New roles. Updated requisites. [pause] Managers who lead people and machines."
+    },
+    {
+      "id": "panel_06",
+      "scene": "Scene 6 — CTA",
+      "text": "[resolute] This is the work HR was built for. [pause] [emphatic] Let's begin."
+    }
+  ]
+}

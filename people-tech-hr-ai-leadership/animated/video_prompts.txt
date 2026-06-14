@@ -1,0 +1,35 @@
+# Video prompts for: People Tech — HR Leads AI Transformation
+# 6 panels (2×3 grid), image-to-video via xai/grok-imagine-video
+# Each prompt describes MOTION only — the visual is already in the image.
+
+---
+
+PANEL 01 | Scene 1 — The Silo Problem
+Camera drifts slowly to the right across the open-plan office, gliding past each disconnected cluster without pausing. Screens flicker as the dolly passes through. People move in their separate worlds — heads down, no eye contact across groups. The slow drift makes the isolation feel vast and structural, not personal. Ambient office hum. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 02 | Scene 2 — IMPROVE
+Camera pushes in slowly toward the HR professional's face and screen. Her fingers type in small deliberate bursts, pausing to read, then typing again — the rhythm of iteration. A slight lean forward as something clicks. The push-in closes the distance until we're almost reading the screen alongside her. Soft keyboard sounds, quiet focus. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 03 | Scene 3 — INTEGRATE
+Static camera holds. The whiteboard facilitator makes a short decisive mark; a hand across the table goes up; another person leans in with a nod. The room breathes — small gestures of genuine alignment. A document slides across the table. Energy is collaborative, not performative. Low ambient meeting-room sound. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 04 | Scene 4 — IMPACT
+Camera pushes in slowly toward the HR leader at the head of the table. Her hand rises to point at the screen behind her; the executives turn to follow. The push-in narrows our world down to her presence and authority. She holds eye contact as she makes her point. The room listens. Quiet room tone, no music. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 05 | Scene 5 — The New Organization
+Camera drifts forward slowly through the redesigned space. A manager glances down at a dashboard then looks up at her team. Two people cross paths and exchange a quick purposeful word. The drift captures the whole environment — the glass wall, the updated postings, the human movement — in one fluid pass. Warm ambient sound, energy without chaos. No text, no captions, no graphic overlays.
+
+---
+
+PANEL 06 | Scene 6 — CTA
+Static camera. The HR leader's gaze holds completely still. The faintest rise and fall of breath. Her eyes stay fixed, direct, certain — a held look that does not waver. High-contrast one-sided light catches the edge of her face. The stillness itself is the statement. Silence. No text, no captions, no graphic overlays.
+
+---
