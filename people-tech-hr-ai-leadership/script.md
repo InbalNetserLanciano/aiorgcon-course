@@ -67,8 +67,8 @@ Location: Clean dark background. Brand space. People Tech Consulting Solutions i
 Camera: Static
 Action: Text appears in two beats. Logo holds at bottom. Final VO line delivered with full authority — a direct challenge and invitation.
 VO: "This is the work HR was built for. Let's begin."
-On-screen text: "People Tech Consulting Solutions | Inbal Netser Lanciano / [website or email] / The 3I Framework for AI-Ready HR"
-<editing>Full brand card. Beat 1 — "This is the work HR was built for." fades in centered, white, large. Beat 2 — "Let's begin." appears below in turquoise, bold. Then: "People Tech Consulting Solutions" in smaller white below. "The 3I Framework for AI-Ready HR" in turquoise. Logo bottom right. Hold 2s. Fade to black.</editing>
+On-screen text: "People Tech Consulting Solutions | Inbal Netser Lanciano / inbalnl@ptc-s.com / +972(0)524242925 / 3i-framework.ptc-s.com / The 3I Framework for AI-Ready HR"
+<editing>Full brand card. Beat 1 — "This is the work HR was built for." fades in centered, white, large. Beat 2 — "Let's begin." appears below in turquoise, bold. Then: "People Tech Consulting Solutions" in smaller white. "Inbal Netser Lanciano" below that in light grey. Contact line: "inbalnl@ptc-s.com  ·  +972(0)524242925" in white small. URL "3i-framework.ptc-s.com" in turquoise. Logo bottom right. Hold 2s. Fade to black.</editing>
 ---
 
 ---
