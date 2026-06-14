@@ -1,74 +1,74 @@
 # People Tech — HR Leads AI Transformation — Commercial Script
 
 **Format:** 6 scenes / ~28 seconds  
-**Concept:** HR is not a technical implementer of AI — it is the function that must lead the entire organizational transformation. Most organizations adopted the tools. They skipped the mindset shift. The 3I Framework gives HR the structured path from tool adoption to genuine transformation.  
-**Tone:** Quiet urgency. Cinematic authority. A manifesto — not a product pitch. The feeling of recognition: "this is exactly where we are, and here is what we do next."  
+**Concept:** AI is spreading unevenly across organizations — creating a new kind of silo: those who build, those who don't, and no common ground. HR is the only function positioned to create that alignment — through experimentation (Improve), cross-functional redesign (Integrate), and strategic rearchitecting of roles, skills, and management for the AI era (Impact). The 3I Framework is the map. People Tech is the guide.  
+**Tone:** Urgent, direct, authoritative. A challenge and an invitation — not a mood piece. HR leaders should finish watching and immediately want to pick up the phone.  
 **Inspiration references:**  
-- Adobe "Special Delivery" (2023) — emotional B2B storytelling, human story over product features  
-- Nike "Never Done Evolving" (2023) — evolution arc, before/after tension, aspirational  
-- Microsoft Copilot "Everyday AI Companion" Super Bowl 2024 — AI belonging to people, not IT  
-- Wieden+Kennedy manifesto-style pacing — short, punchy, declarative sentences over cinematic visuals
+- Adobe "Special Delivery" — human story that earns the product message  
+- Nike "Never Done Evolving" — evolution arc, before/after tension  
+- Basecamp / 37signals brand manifestos — direct, declarative, no softening  
+- Wieden+Kennedy manifesto pacing — short, punchy, each line lands
 
 ---
 
 ---
-SCENE 1 — 3s
-Location: A single modern desk at dawn. One softly glowing screen showing an AI chat interface. An empty chair. Minimal, cinematic.
-Camera: Static
-Action: The AI interface pulses gently on screen. A hand enters frame and sets down a coffee cup. A woman sits down — her face briefly reflected in the screen. She begins to type.
-VO: "AI didn't wait for an invitation."
+SCENE 1 — 4s
+Location: Open-plan office. Three separate clusters visible — a developer building an AI agent on one side, a marketing team running a different AI workflow in the middle, an HR specialist using yet another AI tool at her desk. All moving fast. No one is talking to each other.
+Camera: Slow dolly
+Action: Camera drifts slowly across the space. Every screen glows with a different AI interface. Busy. Productive. Completely disconnected.
+VO: "Everyone is building with AI. No one is building together."
 On-screen text: none
-<editing>No overlay. Pure visual open — the AI is already there before the human arrives. Fade in from black.</editing>
+<editing>No overlay. The visual fragmentation is the entire message. Let the camera catch different, incompatible AI tools on each screen as it drifts.</editing>
 ---
 
 ---
 SCENE 2 — 5s
-Location: Open-plan office. Multiple people at desks using AI tools — generating reports, automating tasks, summarizing documents. Fast, efficient. But the org chart on the wall and the siloed teams tell a different story.
-Camera: Slow dolly
-Action: Camera drifts slowly through the space. Everyone is faster. Everything looks the same. The underlying structure — the org chart, the department silos, the unchanged meeting rooms — hasn't moved.
-VO: "Most organizations adopted the tools. The transformation didn't follow."
-On-screen text: none
-<editing>No overlay. The visual contrast between digital speed and structural inertia is the entire message of this scene. Let it breathe.</editing>
+Location: A single HR professional at her desk, genuinely experimenting. Not watching a training video — actually building: drafting a prompt, testing it, refining it, creating a personal template. Hands on keyboard. Focused. A small win on her face.
+Camera: Push-in
+Action: Camera slowly pushes in toward her screen — we see the AI output getting better with each iteration. She leans back, satisfied. Then immediately opens a new document to do it again.
+VO: "It starts here. Not in a training room. With real, hands-on practice."
+On-screen text: "I1 · IMPROVE — Build your own fluency first."
+<editing>Lower-third text fades in at second 3: "I1 · IMPROVE" in turquoise, "Build your own fluency first." in white. The emphasis is on the doing, not the learning.</editing>
 ---
 
 ---
 SCENE 3 — 5s
-Location: Boardroom. CEO and CHRO seated across from each other. Screens show AI dashboards and adoption metrics. A third person — an external consultant or tech lead — is presenting.
-Camera: Push-in
-Action: Camera slowly pushes in on the HR leader's face. She listens, expressionless. Then — a shift. She leans forward slightly. The decision is forming. She's not waiting to be asked anymore.
-VO: "The question isn't which AI to choose."
-On-screen text: "The question is who shapes what comes next."
-<editing>Lower-third style text card fades in at second 3 of the scene: "The question is who shapes what comes next." White text, no background box — clean over the cinematic shot.</editing>
+Location: A cross-departmental session — HR, IT, Finance, Operations around a shared table. On the whiteboard: a process map with some steps marked "automate," some marked "human," some marked "redesign." Real work in progress.
+Camera: Static
+Action: HR professional stands at the whiteboard, not presenting — facilitating. She asks a question. An IT manager responds. A Finance head adds something. They're building common ground. The silo is cracking open.
+VO: "Integration isn't a tool decision. It's a conversation HR has to convene."
+On-screen text: "I2 · INTEGRATE — One process. One table. No silos."
+<editing>Lower-third text fades in at second 3: "I2 · INTEGRATE" in turquoise, "One process. One table. No silos." in white. The whiteboard should be partially visible — showing the shared process map.</editing>
 ---
 
 ---
 SCENE 4 — 5s
-Location: HR leader standing before a large illuminated diagram on a glass wall — the 3I Framework: three horizontal bands in purple (IMPROVE), teal (INTEGRATE), and deep navy (IMPACT). Clean, architectural, powerful.
-Camera: Static
-Action: She faces the framework, then turns to camera with quiet confidence. The diagram glows behind her. She doesn't explain it — she owns it.
-VO: "The 3I Framework. A structured path from tool adoption to transformation."
-On-screen text: "I1 · IMPROVE  ·  I2 · INTEGRATE  ·  I3 · IMPACT"
-<editing>Text appears at the bottom third as three beats: "I1 · IMPROVE" fades in, then "I2 · INTEGRATE", then "I3 · IMPACT" — each 1.5s apart, staggered reveal. Turquoise accent color on the I-numbers.</editing>
+Location: C-suite meeting room. HR leader at the head of the table — not seated to the side, but leading. Behind her on the screen: a slide with four questions — future roles, updated job requirements, management skills for hybrid teams, orchestration competencies.
+Camera: Push-in
+Action: Camera slowly pushes in as the HR leader presents, pointing to each item. CEO and senior leaders are listening. The conversation has shifted — from AI tools to organizational architecture.
+VO: "Who will we need? What changes in every role? Who manages the machines?"
+On-screen text: "I3 · IMPACT — HR doesn't just implement AI. HR redesigns the organization for it."
+<editing>Lower-third overlay fades in at second 2: "I3 · IMPACT" in turquoise (large), then below in white smaller text: "HR doesn't just implement AI. HR redesigns the organization for it." Bold claim, hold for 3 seconds.</editing>
 ---
 
 ---
-SCENE 5 — 5s
-Location: A collaborative working session — HR, IT, Finance, and department managers around a shared table. Whiteboards with process maps. Some elements circled as "human," others marked for automation. Energy, debate, movement.
+SCENE 5 — 4s
+Location: Same organization — but now with clarity. Whiteboards show updated job architectures. People move with purpose. An "AI orchestrator" role visible on a job posting pinned to a glass wall. A manager using a dashboard to see AI agent outputs alongside her team's work.
 Camera: Slow dolly
-Action: Camera moves slowly around the group. The HR professional is facilitating — not presenting, but convening. Different voices. Real redesign happening in real time.
-VO: "When HR leads, the whole organization learns."
+Action: Camera drifts through the renewed space. The energy is different — not faster, but aligned. Human and AI working in structure, not chaos.
+VO: "New roles. Updated requisites. Managers who lead people and machines."
 On-screen text: none
-<editing>No overlay. This scene is the proof point — show don't tell. Let the visual of HR as convener of organizational change speak for itself.</editing>
+<editing>No overlay text. The visual evidence speaks: updated org design, clear human-AI roles, the "orchestrator" job posting visible in frame. End on a wide shot with the whole space in view.</editing>
 ---
 
 ---
 SCENE 6 — 5s
-Location: Deep purple background — brand space. Clean, minimal. The People Tech Consulting Solutions logo glows softly.
+Location: Clean dark background. Brand space. People Tech Consulting Solutions identity.
 Camera: Static
-Action: Two lines of text appear sequentially on a dark background. The logo holds. Silence before the final VO line lands.
-VO: "AI is already here. The question is — what HR does with that."
-On-screen text: "People Tech Consulting Solutions / The 3I Framework for AI-Ready HR"
-<editing>Full-screen brand card. Line 1 fades in: "AI is already here." — pause — Line 2 fades in: "The question is — what HR does with that." Then below: "People Tech Consulting Solutions" in white, "The 3I Framework for AI-Ready HR" in turquoise. Logo bottom right. Fade to black on last frame.</editing>
+Action: Text appears in two beats. Logo holds at bottom. Final VO line delivered with full authority — a direct challenge and invitation.
+VO: "This is the work HR was built for. Let's begin."
+On-screen text: "People Tech Consulting Solutions | Inbal Netser Lanciano / [website or email] / The 3I Framework for AI-Ready HR"
+<editing>Full brand card. Beat 1 — "This is the work HR was built for." fades in centered, white, large. Beat 2 — "Let's begin." appears below in turquoise, bold. Then: "People Tech Consulting Solutions" in smaller white below. "The 3I Framework for AI-Ready HR" in turquoise. Logo bottom right. Hold 2s. Fade to black.</editing>
 ---
 
 ---
